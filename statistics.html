@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Statistics</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="shortcut icon" href="./images/roundabout.ico" type="image/x-icon"/>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  </head>
-  <body class="plot">
-    <canvas id="histogramCanvas">
-      <script src="./js/plot.js"></script>
-    </canvas>
-  </body>
+<head>
+  <title>Statistics</title>
+  <link rel="stylesheet" href="./css/plot.css" />
+  <link rel="shortcut icon" href="./images/roundabout.ico" type="image/x-icon" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body class="plot">
+  <div class="homeContainer"></div>
+  <div class="grid-container">
+    <canvas id="waitingTimeChart"></canvas>
+    <canvas id="crowdingChart"></canvas>
+    <canvas id="lanesChart"></canvas>
+  </div>
+  <script src="./js/plot.js"></script>
+</body>
 </html>
